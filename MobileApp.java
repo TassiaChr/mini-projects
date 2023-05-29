@@ -197,11 +197,6 @@ public class MobileApp {
             if (!insertContact(firstname, lastname, phoneNumber)) {
                 throw new IllegalArgumentException("Error in insert");
             }
-//            if (insertContact(firstname, lastname, phoneNumber)) {
-//                System.out.println("Successfully inserted");
-//            } else {
-//                throw new IllegalArgumentException("Error in insert");
-//            }
         } catch (IllegalArgumentException e) {
             log(e);
             throw e;
